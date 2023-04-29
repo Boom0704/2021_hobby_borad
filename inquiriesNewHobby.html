@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>클래스 개설 문의</title>
+    <style>
+    #button1{
+      background: skyblue;
+      font-size:20px;
+      font-weight:bold;
+      color:#000000;
+      text-align:center;
+      border:solid 1px #99E000;
+      background: -moz-linear-gradient(0%, 100%, 90deg, #75BC00, #ffffff);
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(blue));
+      border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      padding: 0px 0px 0px 0px;
+    }
+    
+    div.button{
+      float: right;
+      width: 50%;
+      padding: 30px;
+    }
+    div.button input{
+      padding: 10px;
+      width: 100%;
+      font-size: 18px;
+      }
+    body{
+      height: 100%;
+      background-color: #F3F1E9;
+    }
+    label{
+      
+      width: 100px;
+      color: green;
+      font-weight: bold;
+      text-align: right;
+      padding : 20px 0px 5px 530px;
+    }
+    input{
+      display: inline-block;
+      width: 120px;
+    }
+    fieldset{
+      color: #beaed4;
+      padding: 40px;
+    }
+    legend{
+      color: green;
+      font-weight:bold;
+      align:center;
+    }
+</style>
+  </head>
+  <script type="text/javascript">
+  </script>
+  <body>
+  
+<form name="form1" method="post" action="home2.jsp">
+<fieldset>
+    <legend >클래스 개설 문의</legend>
+    <table>
+      <tr>
+        <td><span>게시글 제목 : </span></td>
+        <td><input type=text name=title id="title"></td>
+      </tr>
+      <tr>
+        <td><span>새로운 취미 이름 : </span></td>
+        <td><input type=text name=name id="name"></td>
+      </tr>
+      <tr>
+        <td><span>취미 영역 : </span></td>
+        <td><input type=text name=area id="area"></td>
+      </tr>
+      <tr>
+        <td><span>취미 추가 개설 이유 : </span></td>
+        <td><textarea cols="40" rows="10" name=reason id="reason"></textarea></td>
+      </tr>
+    </table>
+    
+    <button type="button" id="button1" onclick="check();">제출</button>
+</fieldset>
+</form>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 50px; box-sizing: border-box;
+}
+img {
+    width: 470px;
+    height: 280px;
+    object-fit: cover;
+}
+h2 {
+    height: 280px;
+    margin: 0px;
+}
+ul{
+    list-style:none;
+}
+
+
+
+/* 해더 */
+.header{
+    width: 1700px;
+}
+.header .mainTitleBG {
+    text-align: center;
+    color: olive;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: black;
+}
+.header .mainTitleBG .mainTitle {
+    font-size: 35px;
+    color: purple;
+}
+.header .Mainmenu {
+    list-style: none;
+    text-align: center;
+    color: White;
+    background-color: gray;
+}
+.header .Mainmenu ul li {
+    display: inline;
+    padding: 0 35px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: White;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+}
+.header .Mainmenu ul li li {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding: 0px 10px 0px 15px;
+    text-align: left;
+}
+.header .Mainmenu ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgb(109, 109, 109);
+}
+.header .Mainmenu li ul {
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 200px;
+    z-index: 200;
+    left: 0;
+}
+.header .Mainmenu li:hover ul {
+    display: block;
+}
+.header .Mainmenu li li {
+    background: gray;
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+}
+.header .Mainmenu li:hover li a {
+    background: none;
+}
+
+
+.bodypart{
+    display: flex;
+    width: 100%;
+}
+.bodypart .leftside {
+    width: 200px;
+    float: left;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.bodypart .leftside button:hover{
+    text-decoration: none;
+}
+.bodypart .leftside .upside{
+    margin: 10px;
+    border-bottom: 1px solid var(--grey-light-color);
+    padding-bottom: 10px;
+}
+.bodypart .leftside .upside li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bodypart .leftside .upside button{
+    height: 40px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+
+
+
+.bodypart .recomandSpace{
+    width: 1500px;
+    display: flex;
+    border: 1px solid #003458;
+}
+
+.bodypart .recomandSpace .recomandWindow{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66ffcc;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.bodypart .recomandSpace .recomandWindow .mainQuestion{
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.bodypart .recomandSpace .recomandWindow .kindOfQuestion{
+    width: 500px;
+    /* recomandWindow에서 align-items 때문에 %로 지정 불가 */
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.bodypart .recomandSpace .recomandWindow .resultBtn{
+    width: 500px;
+    /* recomandWindow에서 align-items 때문에 %로 지정 불가 */
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: lightpink;
+}
+
+.bodypart .recomandSpace .recomandWindow .resultSub{
+    width: 500px;
+    /* recomandWindow에서 align-items 때문에 %로 지정 불가 */
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: khaki;
+}
+
+
+.bodypart .recomandSpace .recomandWindow .result{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
